@@ -4,7 +4,7 @@ Restarts the pods of a deployment when requested.
 
 ## Usage
 
-This app exposes an HTTP endpoint that restarts the deployments matching the given label selector in kubernetes. The use case is for third-part services, like Gitlab CI or Github Actions, to easily be able to restart pods in a deployment without exposing the entire cluster.
+This app exposes an HTTP endpoint that restarts the deployments matching the given label selector in Kubernetes. The use case is for third-part services, like Gitlab CI or Github Actions, to easily be able to restart pods in a deployment without exposing the entire cluster. Remember that this relies on setting `imagePullPolicy: always` on the pods of your deployments.
 
 ### Environment variables
 
