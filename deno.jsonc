@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "dev": "LABEL_SELECTOR=\"app=prototyp\" NAMESPACE=trippler KEY=abc deno run --allow-net --allow-env --allow-read --allow-run --unstable --watch main.ts"
+  }
+}
